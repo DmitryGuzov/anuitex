@@ -1,7 +1,7 @@
-import {FeatureObject} from './featureObject.interface'
+import { FeatureObject } from './featureObject.interface';
 
 export interface FeatureModel {
-    lvl: number;
-    title: string;    
-    leadTime?: string;
+  lvl: number;
+  title: string;
+  estimate: string;
 }

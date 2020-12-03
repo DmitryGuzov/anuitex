@@ -1,4 +1,4 @@
-import { object, string, number, array } from "yup";
+import { object, string, number, array } from 'yup';
 
 export const ProjectValidation = object().shape({
   title: string().required(),
@@ -7,8 +7,8 @@ export const ProjectValidation = object().shape({
     object().shape({
       lvl: number().required(),
       title: string().required(),
-      leadTime: string()
-    })
+      estimate: string().required(),
+    }),
   ),
-  rate: number().required(),
+  estimate: number().required(),
 });

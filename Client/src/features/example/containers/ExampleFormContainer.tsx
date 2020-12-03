@@ -4,6 +4,8 @@ import { useDispatch, useSelector } from "react-redux";
 import { Action } from "redux";
 import { ExampleForm, ExampleModel } from "../components/ExampleForm";
 import { exampleAction } from "../store/actions";
+import {Header} from '../../projects/components/Header';
+
 export interface ExampleFormContainerProps { }
 
 export function ExampleFormContainer({ }: ExampleFormContainerProps): JSX.Element {
@@ -19,6 +21,8 @@ export function ExampleFormContainer({ }: ExampleFormContainerProps): JSX.Elemen
   });
 
   return (
+    <>
+    <Header username="Dima" email="trololo" />
     <ExampleForm
       value={{
         email: "",
@@ -27,5 +31,6 @@ export function ExampleFormContainer({ }: ExampleFormContainerProps): JSX.Elemen
       loading={loading}
       onChange={handleExample}
     />
+    </>
   );
 }

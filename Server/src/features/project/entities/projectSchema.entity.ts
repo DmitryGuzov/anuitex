@@ -1,6 +1,6 @@
 //Vendors
-import { Document, model, Schema } from "mongoose";
-import {Project} from '../interface/project.interface'
+import { Document, model, Schema } from 'mongoose';
+import { Project } from '../interface/project.interface';
 
 const projectSchema = new Schema<Project>({
   title: {
@@ -11,18 +11,18 @@ const projectSchema = new Schema<Project>({
     type: String,
     required: true,
   },
-  rate: {
+  features: {
+    type: Array,
+    required: true,
+  },
+  estimate: {
     type: Number,
     required: true,
     min: 0,
-    max: 10
+    max: 100,
   },
-  features: {
-    type: Array,
-    required: true
-  }
 });
 
 interface projectSchemaEntityModel extends Project, Document {}
 
-export default model<projectSchemaEntityModel>("Projects", projectSchema);
+export default model<projectSchemaEntityModel>('Projects', projectSchema);

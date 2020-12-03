@@ -1,8 +1,8 @@
-import {FeatureModel} from './feature.interface'
+import { FeatureModel } from './feature.interface';
 
 export interface Project {
-    title: string;
-    description: string;
-    features: Array<FeatureModel>
-    rate: number;
-} 
+  title: string;
+  description: string;
+  features: Array<FeatureModel>;
+  estimate: number;
+}

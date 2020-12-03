@@ -1,5 +1,5 @@
 export interface FeatureObject {
-    lvl: number;
-    title: string;    
-    leadTime?: string;
+  lvl: number;
+  title: string;
+  estimate: string;
 }
