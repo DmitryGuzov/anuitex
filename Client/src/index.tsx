@@ -6,6 +6,7 @@ import { Provider } from "react-redux";
 import { Switch } from "react-router";
 import { AppRoutes } from "./app-routes";
 import { appStore } from "./app-state";
+
 // import "./extensions/array";
 import { history } from "./history-instance";
 import "./index.scss";
