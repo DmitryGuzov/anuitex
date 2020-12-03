@@ -1,0 +1,8 @@
+POST http://localhost:3000/api/auth/signedin
+content-type: application/json
+Authorization: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZmM2NGQzZjE1YWY0ZDAzNDAyOTY2NDAiLCJlbWFpbCI6InRlc3RAZ21haWwuY29tIiwiaWF0IjoxNjA2ODk2NjM3LCJleHAiOjE2MDY5ODMwMzd9.OGRYF5hOQRI73n3t1_eiksgZCSmYOVHhVxWBvo30SXM"
+
+{
+    "email": "test@gmail.com",
+    "password": "test"
+}
